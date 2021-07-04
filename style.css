@@ -27,3 +27,46 @@ main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
+
+/* background color of last section to be brown */
+.bg-primary {
+  background-color: #775f47;
+}
+
+.group img {
+  width: 100%;
+}
+
+/* Groups & Items  (Mobile First) */
+.group {
+  display: flex;
+  /* we want the direction to be columns (vertical) */
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  /* every item will have a flex set to 1 */
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  /* flex set to 2 because we want to style it so that it takes up double */
+  flex: 2;        
+  margin:10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+/* once larger than 800px, do this */
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  /* change flex direction to row (horizontal) */
+  .group {
+    flex-direction: row;
+  }
+}
